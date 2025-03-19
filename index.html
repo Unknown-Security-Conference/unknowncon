@@ -4,73 +4,119 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Unknown Security Conference</title>
+  
+  <!-- Google Fonts: Bebas Neue y Orbitron -->
+  <link 
+    href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Orbitron:wght@400;700&display=swap" 
+    rel="stylesheet"
+  />
+  
   <style>
-    body {
+    /* Reinicio básico de márgenes y rellenos */
+    * {
       margin: 0;
       padding: 0;
-      background-color: #0F1B31; /* Color de fondo oscuro */
-      font-family: Arial, sans-serif;
-      color: #ffffff;
+      box-sizing: border-box;
+    }
+    
+    body {
+      background-color: #0F1B31; /* Nuevo color de fondo */
+      color: #ffffff;           /* Texto en blanco */
+      font-family: 'Orbitron', sans-serif;
       text-align: center;
+      padding: 40px 20px;
     }
 
     .container {
-      padding: 40px 20px;
       max-width: 600px;
       margin: 0 auto;
     }
 
+    /* Logo más grande */
     .logo {
-      max-width: 300px;
+      max-width: 480px; /* Aumentar este valor para  logo más grande */
       width: 100%;
     }
 
-    h1 {
+    /* Texto grande "UNKNOWN" */
+    .main-title {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 4em;
       margin: 20px 0 10px;
-      font-size: 2.2em;
-      text-transform: uppercase;
+      letter-spacing: 2px; /* Separación de letras */
     }
 
+    /* Subtítulo "Security Conference" */
     .subtitle {
+      font-family: 'Orbitron', sans-serif;
       font-size: 1.2em;
-      color: #f75252; /* Rojo suave  */
+      color: #f75252; /* Rojo */
       margin-bottom: 30px;
+      letter-spacing: 1px;
     }
 
+    /* Bloque de información principal */
     .info {
-      margin: 10px 0;
       font-size: 1em;
-      line-height: 1.5em;
+      line-height: 1.6;
+      margin-bottom: 40px;
     }
 
+    /* Estilos generales para enlaces */
     a {
-      color: #00d58c; /* Verde/Azul */
+      color: #00d58c;
       text-decoration: none;
     }
 
+    /* Estilos para las palabras "OPEN" */
+    .highlight {
+      font-weight: bold;
+    }
+
+    /* Estilos del pie o sección final */
     .footer {
-      margin-top: 40px;
-      font-size: 0.95em;
+      font-size: 0.9em;
       color: #cccccc;
     }
   </style>
 </head>
 <body>
   <div class="container">
-    <!-- Logo -->
-    <img src="logo.jpg" alt="Logo UNKNOWN Security Conference" class="logo" />
 
-    <h1>UNKNOWN</h1>
+    <!-- Ajusta la ruta si tu logo está en otra carpeta -->
+    <img src="logo.png" alt="Logo UNKNOWN" class="logo" />
+
+    <!-- Título principal -->
+    <h1 class="main-title">UNKNOWN</h1>
     <div class="subtitle">Security Conference</div>
-    
+
+    <!-- Sección con datos del evento -->
     <div class="info">
       <p><a href="https://www.unknowncon.pe" target="_blank">www.unknowncon.pe</a></p>
-      <p>Lima, Perú<br>Julio 11th - 12th, 2025</p>
-      <p>Call for Papers: <strong style="color:#00d58c;">OPEN</strong> | 
-         Call for Sponsors: <strong style="color:#00d58c;">OPEN</strong></p>
-      <p>Contacto: <a href="mailto:hola@unknowncon.pe">hola@unknowncon.pe</a></p>
+      <p>Lima, Perú<br>July 11th - 12th, 2025</p>
+      <p>
+        Call for Papers 
+        <a 
+          href="https://sessionize.com/unknown-security-conference" 
+          target="_blank" 
+          class="highlight"
+        >
+          OPEN
+        </a>
+        |
+        Call for Sponsor is 
+        <a 
+          href="mailto:hola@unknowncon.pe" 
+          target="_blank" 
+          class="highlight"
+        >
+          OPEN
+        </a>
+      </p>
+      <p>hola@unknowncon.pe</p>
     </div>
 
+    <!-- Pie de página / Créditos -->
     <div class="footer">
       © 2025 UNKNOWN Security Conference
     </div>
